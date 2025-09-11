@@ -2,7 +2,7 @@
   <img src="https://globalacademyoficial.com/_next/static/media/logo_ga.b3948337.svg" alt="Propital" />
 </p>
 
-# Bienvenidos al repositorio de la comisión 19
+# Bienvenidos al repositorio de la comisión 20
 
 ## Instructivo para descargar el repositorio
 
