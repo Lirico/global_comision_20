@@ -1,0 +1,81 @@
+
+
+/* 
+    Aqui colocamos todos aquellos estilos
+    que se repetiran en todas nuestras paginas.
+
+    Ejemplos:
+        - Nav
+        - Footer
+*/
+
+/* Nos comunicamos por medio de Selectores. */
+/* nav {
+    background-color: blueviolet;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+} */
+/**********************************************************************/
+/* 
+    TIPOS DE SELECTORES
+*/
+
+/* SELECTOR DE UNIVERSAL */
+/* * {
+    color: white;
+    background-color: black;
+} */
+/* body {
+    color: white;
+    background-color: black;
+} */
+
+/* SELECTOR DE ETIQUETA */
+/* p {
+    color: red;
+} */
+
+/* SELECTOR DE CLASE */
+/* .sega {
+    color: green;
+} */
+
+/* SELECTOR DE ID */
+/* #titulo { 
+    color: blueviolet;
+} */
+
+/* CODIGO DE ESPECIFICDAD */
+
+
+/* COMBINANDO SELECTORES!! */
+
+/* SELECTOR DE HIJO */ 
+/* section > article > p {
+    color: blue;
+} */
+
+/* SELECTOR DE DESCENDIENTE */ 
+/* section p {
+    color: red;
+} */
+
+/* SELECTOR DE HERMANOS */ 
+/* h2 ~ p {
+    color: red;
+} */
+
+/* SELECTOR DE HERMANO ADYASCENTE */ 
+/* h2 + p {
+    color: blue;
+} */
+
+/* PSEUDO CLASES  */
+/* .primera p:nth-child(2) {
+    color: red;
+} */
