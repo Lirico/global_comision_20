@@ -1,0 +1,23 @@
+.container {
+  width: 600px;
+  height: 600px;
+  background-image: url(/clase_10_css_03/images/patito.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 2.5rem;
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: inherit;
+  height: inherit;
+
+  /* CENTRADO DE TEXTO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+}
