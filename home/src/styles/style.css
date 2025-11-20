@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/********* CUSTOM PROPERTIES ********/
+:root {
+  --primary-color: rgb(85, 164, 85);
+  --primary-alpha-color: rgba(85, 164, 85, 0.8);
+  --secondary-color: #785f44;
+  --white-color: #ffffff;
+  --primary-font: "Poller One", cursive;
+}
+
+/********* RESET ********/
+* {
+  box-sizing: border-box;
+  color: var(--white-color);
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-image: url(/home/src/assets/images/yoda_home_background.jpg);
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/*********** UTILITES ***********/
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 0;
+  font-family: var(--primary-font);
+  height: 3.3rem;
+  text-align: center;
+  transition: 0.3s;
+  width: 200px;
+}
+.btn:hover {
+  background-color: var(--primary-alpha-color);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*********** SITE STYLES ***********/
+/****** NAVIGATION ******/ 
+.nav_container 
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: fixed;
+    width: 100%;
+    & .nav_logo 
+    {
+        align-items: center;
+        column-gap: 10px;
+        display: flex;
+
+        & img 
+        {
+            width: 60px;
+        }
+    }
+    & .nav_menu 
+    {
+        column-gap: 50px;
+        display: flex;
+        & .nav_item  
+        {
+            transition: 0.3s;
+        }
+        & .nav_item:hover  
+        {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.nav_active 
+{
+    background-color: var(--primary-color);
+}
+
+/****** HOME ******/ 
+.home 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 2%;
+    width: 100%;
+    & h1 
+    {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        & span 
+        {
+            color: var(--primary-color);
+        }
+    }
+}
+
+/****** EMPTY ******/ 
+.empty
+{
+    background-color: var(--white-color);
+    height: 100vh;
+}
+
