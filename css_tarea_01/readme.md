@@ -12,15 +12,12 @@ En esta tarea trabajaremos sobre el proyecto de la tarea anterior.
 ## Consigna:
 
 - El home debe tener una altura de 100 vh. 
-- El fondo del Home puede ser una imagen, un video, un simple fondo de color.
-- Deberá tener titulo y texto acompañante y ambos deben estar en fuentes extraídas de Google Fonts. Una fuente para el título y una para el texto.
+- El fondo un simple fondo de color, incluso un degradado si gustan investigarlo.
+- Deberá tener titulo y texto acompañante y ambos deben estar en fuentes extraídas de Google Fonts (investigar). Una fuente para el título y una para el texto.
 
 ## Opcional:
-- Si se animan a investigar les propongo colocar como fondo del Home un carrusel de imágenes en lugar de una imagen, video o color.
-- Si eligen esta opción deberán colocarle texto a las imágenes antes de enlazarlas al carousel. El texto debe describir algo sobre el sitio. 
+- Si se animan a investigar les propongo colocar como fondo del Home una imagen (investigar).
 
-Para esto pueden tomar como referencia el carousel del sitio:
-https://www.liceobritanico.com/
 
 ## Nota:
 - Para clonar el repo **git clone "enlace al repo"**
