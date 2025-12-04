@@ -1,0 +1,158 @@
+/********* CUSTOM PROPERTIES *********/
+:root {
+  --primary-color: #4191ff;
+  --white-color: #ffffff;
+  --grey-light-color: #c0c0c0;
+  --primary-font: "Roboto", sans-serif;
+}
+
+/********* RESET *********/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+
+/********* PAGE STYLES *********/
+/****** CONTACT ******/
+.contact {
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: auto;
+
+  & .contact_grid_container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr;
+    width: inherit;
+
+    & .contact_form_grid_item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & h2 {
+        color: var(--white-color);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      & .contact_form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        width: 90%;
+
+        & input,
+        textarea,
+        button {
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1.2rem;
+        }
+        & input::placeholder,
+        textarea::placeholder {
+          color: var(--grey-light-color);
+        }
+        & input {
+          height: 3rem;
+          padding-left: 1.2rem;
+        }
+        & textarea {
+          font-family: var(--primary-font);
+          padding: 1.2rem 0 0 1.2rem;
+          resize: none;
+        }
+        & button {
+          background-color: var(--primary-color);
+          border: 4px solid var(--white-color);
+          color: var(--white-color);
+          cursor: pointer;
+          font-size: 1.5rem;
+          font-weight: bold;
+          height: 4rem;
+          text-transform: uppercase;
+          transition: 0.3s;
+        }
+        & button:hover {
+          background-color: var(--white-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    & .contact_map_grid_item {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      & iframe {
+        border-radius: 0.5rem;
+        height: 300px;
+        width: 90%;
+      }
+    }
+  }
+}
+
+/******** TABLET ********/
+@media screen and (min-width: 768px) {
+  /****** CONTACT ******/
+  .contact {
+    & .contact_grid_container {
+      grid-template-columns: 50% 50%;
+
+      & .contact_form_grid_item {
+        & h2 {
+          margin-bottom: 2rem;
+        }
+      }
+      & .contact_map_grid_item {
+        & iframe {
+          width: 90%;
+          height: 62%;
+        }
+      }
+    }
+  }
+}
+
+/******** DESKTOP ********/
+@media screen and (min-width: 1400px) {
+   /****** CONTACT ******/
+  .contact {
+    & .contact_grid_container {
+      grid-template-columns: 60% 40%;
+
+      & .contact_form_grid_item {
+        & h2 {
+          margin-bottom: 2rem;
+        }
+      }
+      & .contact_map_grid_item {
+        & iframe {
+          width: 90%;
+          height: 62%;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*
+    ATAJOS PARA COMENTAR Y DESCOMENTAR
+
+    Comentar: ctrl + k + c
+    Descomentar: ctrl + k + u
+*/
